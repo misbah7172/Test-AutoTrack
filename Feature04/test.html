@@ -12,5 +12,31 @@
         // Example JavaScript code to demonstrate functionality
         console.log("AutoTrack Feature 03 is working!");
     </script>
+
+    <script>
+        // Simulate a function that tracks an event
+        function trackEvent(eventName) {
+            console.log(`Event tracked: ${eventName}`);
+        }
+
+        // Simulate tracking a button click
+        document.addEventListener('click', function(event) {
+            if (event.target.tagName === 'BUTTON') {
+                trackEvent('Button Clicked');
+            }
+        });
+
+        // Example button to test tracking
+        const button = document.createElement('button');
+        button.textContent = 'Click Me';
+        document.body.appendChild(button);
+<h2>dkjfg</h2>
+        // Automatically trigger a tracking event
+        trackEvent('Page Loaded');
+
+        // Simulate a delay to show tracking after some time
+        setTimeout(() => {
+            trackEvent('Delayed Event');
+        }, 2000);
 </body>
 </html>
