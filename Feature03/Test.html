@@ -25,6 +25,8 @@
         const button = document.createElement('button');
         button.textContent = 'Click Me';
         document.body.appendChild(button);  
+        // Automatically trigger a tracking event
+        trackEvent('Page Loaded');
     </script>
 </body>
 </html>
