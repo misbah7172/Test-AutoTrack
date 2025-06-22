@@ -15,6 +15,12 @@
         function trackEvent(eventName) {
             console.log(`Event tracked: ${eventName}`);
         }
+        // Simulate tracking a button click
+        document.addEventListener('click', function(event) {    
+            if (event.target.tagName === 'BUTTON') {
+                trackEvent('Button Clicked');
+            }
+        });
     </script>
 </body>
 </html>
